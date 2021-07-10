@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto"
+        android:text="Calcule o seu IMC!"
+        android:textColor="#093A61"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Você irá descobrir se está acima, \nabaixo ou no peso ideal."
+        android:textColor="#093A61" />
+
+
+    <EditText
+        android:id="@+id/edt_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:ems="8"
+        android:hint="Altura(cm)"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:hint="Peso(kg)"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="#0868B5"
+        android:textSize="34sp"
+        tools:text="resultado" />
+
+    <TextView
+        android:id="@+id/txt_classification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="#093A61"
+        android:textSize="20sp"
+        tools:text="classificacao" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/calcular"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="10dp"
+        android:layout_marginBottom="80dp"/>
+
+    <Button
+        android:id="@+id/btnInfo"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Saiba mais"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+</LinearLayout>
